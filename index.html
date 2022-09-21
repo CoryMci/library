@@ -10,25 +10,25 @@
 </head>
 <body>
     <div class="container">
-        <button class="newbook">Add book!</button>
+        <h1>Library</h1>
         <ul class="lib">
-
+            <button class="newbook">Add book!</button>
         </ul>
     </div>
     <div class="form-popup">
         <form class="form" action="">
-            <h1>Add Book Details!</h1>
+            <div class="header">
+                <h1>Add Book Details!</h1>
+                <button class="x" type="button">X</button>
+            </div>
+            
 
-            <label for="title">Title</label>
-            <input type="text" placeholder="Enter title" name="title" required>
+            <input type="text" placeholder="Title" name="title" required>
 
-            <label for="author">Author</label>
-            <input type="text" placeholder="Enter author" name="author" required>
+            <input type="text" placeholder="Author" name="author" required>
 
-            <label for="pages">Pages</label>
-            <input type="number" placeholder="Enter page count" name="pages" required>
+            <input type="number" placeholder="Page count" name="pages" required>
 
-            <label for="read">Read?</label>
             <input class= 'read' type="checkbox"  name="read">
 
             <button type="submit">Add Book!</button>

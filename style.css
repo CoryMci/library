@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    background-color: rgb(123, 108, 255);
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit, 400px);
+    gap: 50px;
+}
+
+.container {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    text-align: center;
+    gap: 50px;
+    padding-top: 25px;
+}
+
+.newbook {
+    border-radius: 15px;
+    border: dashed;
+    background-color: transparent;
+}
+
+li {
+    border-radius: 15px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: min-content repeat(4, 1fr);
+    padding: 15px;
+    background-color: rgb(255, 199, 199);
+    transition: 0.5s ease all;
+}
+
+li[read='true']{
+    transition: 0.5s ease all;
+    background-color: rgb(199, 255, 199);
+    }
+
+li button {
+    justify-self: end;
+}
+
+li p {
+    border-bottom: 1px solid black;
+}
+
+li p:last-child {
+    border: none;
+}
+
+.form-popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:100%;
+    width:100%;
+    display: grid;
+}
+
+.form {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+    border-radius: 15px;
+    display: grid;
+    gap: 12px;
+    overflow:hidden;
+}
+
+input {
+    background-color: rgb(227, 247, 255);
+    border: none;
+    border-radius: 15px;
+    text-indent: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0px 15px;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.form .header {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    font-size: 2em;
+    font-weight: 700;
+    background-color: aquamarine;
+    padding: 15px;
+    height: min-content;
+}
+
+.x {
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color:brown;
+}
+
+.delete {
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color:brown;
+}
